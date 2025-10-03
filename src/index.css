@@ -3,3 +3,152 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to right, #232526, #414345);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #333;
+}
+
+.app {
+  min-width: 100rem;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 1rem;
+}
+
+.search {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-box {
+  height: 100%;
+  width: 5%;
+  font-size: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+.search-icon {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+.search-input {
+  font: inherit;
+  font-size: 1.6rem;
+  height: 100%;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0 4rem 0;
+}
+
+.city-name {
+  font-size: 6rem;
+  text-transform: uppercase;
+  opacity: .5;
+  text-shadow: 3px 3px 0px #666;
+}
+
+.temp-section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.temp-icon {
+  font-size: 12rem;
+  opacity: .7;
+}
+
+.temp-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.temp-box span:first-child {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.temp-box span:last-child {
+  font-size: 2rem;
+  font-weight: 600;
+  opacity: .6;
+}
+
+.other-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.other-detail-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.other-detail-icon {
+  font-size: 4rem;
+  opacity: .7;
+}
+
+.other-detail-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  opacity: .8;
+}
+
+.initial-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.initial-display h2 {
+  font-size: 5rem;
+}
+
+.initial-display p {
+  font-size: 1.6rem;
+}
+
+.loading {
+  font-size: 3rem;
+  opacity: .8;
+}
+
+.error {
+  font-size: 2rem;
+  color: crimson;
+  text-transform: uppercase;
+}
